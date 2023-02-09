@@ -24,7 +24,7 @@ const Home = () => {
     if (map.current) return; // initialize map only once
     const toAdd = new mapboxgl.Map({
       container: mapContainer.current!,
-      style: "mapbox://styles/mapbox/outdoors-v12?optimize=true",
+      style: "mapbox://styles/mapbox/dark-v11?optimize=true",
       center: [lng, lat],
       zoom: zoom,
       attributionControl: false,
