@@ -1,5 +1,6 @@
 import { Gear, MagnifyingGlass } from "phosphor-react";
 import React from "react";
+import { Button } from "./Button";
 import { Logo } from "./Logo";
 
 export const TopFloaty = () => {
@@ -9,9 +10,13 @@ export const TopFloaty = () => {
         <Logo />
         <span className="text-lg font-bold">Doerly</span>
       </div>
-      <div className="flex items-center gap-7 rounded-2xl border border-[#4C4C4C] bg-[#2C2C2C] p-3  px-4 text-white ">
-        <MagnifyingGlass size={22} />
-        <Gear size={22} />
+      <div className="flex items-center gap-2 rounded-2xl border border-[#4C4C4C] bg-[#2C2C2C] p-3 text-white ">
+        <Button buttonColor="ghost" buttonPadding="box">
+          <MagnifyingGlass size={22} />
+        </Button>
+        <Button buttonColor="ghost" buttonPadding="box">
+          <Gear size={22} />
+        </Button>
       </div>
     </div>
   );
