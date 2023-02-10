@@ -12,7 +12,7 @@ const colorSelection = {
 
 const paddingSelection = {
   norm: "py-2 px-4",
-  box: "p-2",
+  box: "h-full px-2",
 };
 
 export const Button = ({
@@ -25,7 +25,7 @@ export const Button = ({
   return (
     <button
       {...props}
-      className={`w-full rounded-lg font-semibold ${paddingSelection[buttonPadding]} ${colorSelection[buttonColor]} ${className}`}
+      className={`w-full rounded-xl font-semibold ${paddingSelection[buttonPadding]} ${colorSelection[buttonColor]} ${className}`}
     >
       {children}
     </button>
