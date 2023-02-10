@@ -5,7 +5,7 @@ import { Logo } from "./Logo";
 
 export const TopFloaty = () => {
   return (
-    <div className="absolute left-3 top-3 right-3 z-10 flex justify-between">
+    <div className="absolute left-3 top-3 right-3 z-50 flex justify-between">
       <div className="flex items-center gap-2 rounded-2xl border border-[#4C4C4C] bg-[#2C2C2C] p-1 text-white ">
         <Logo />
         <span className="text-lg font-bold">Doerly</span>
