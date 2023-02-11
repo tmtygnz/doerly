@@ -6,26 +6,27 @@ export interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const colorSelection = {
-  norm: "border-[#808080] bg-[#262626] hover:bg-[#2A2A2A] border",
-  ghost: "hover:bg-[#404040]",
+  white: "bg-white border border-black text-black",
+  black: "bg-black border border-white text-white",
+  ghost: "hover:bg-gray-50",
 };
 
 const paddingSelection = {
-  norm: "py-2 px-4",
+  norm: "py-1 px-4",
   box: "h-full px-2",
 };
 
 export const Button = ({
   className,
   children,
-  buttonColor = "norm",
+  buttonColor = "white",
   buttonPadding = "norm",
   ...props
 }: Props) => {
   return (
     <button
       {...props}
-      className={`w-full rounded-xl font-semibold ${paddingSelection[buttonPadding]} ${colorSelection[buttonColor]} ${className}`}
+      className={`rounded-full font-medium ${paddingSelection[buttonPadding]} ${colorSelection[buttonColor]} ${className}`}
     >
       {children}
     </button>
