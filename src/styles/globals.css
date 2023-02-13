@@ -10,5 +10,9 @@
 }
 
 ::selection {
-  background: #F57A9B;
+  background: #f57a9b;
+}
+
+body {
+  background-color: #f7f7f7;
 }

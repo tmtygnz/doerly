@@ -6,7 +6,7 @@ export const Input = ({
 }: React.InputHTMLAttributes<HTMLInputElement>) => {
   return (
     <input
-      className="border-emdark-brdr bg-emdark-acc hover:bg-emdark-hvr rounded-xl border px-2 outline-none"
+      className={` ${className} px-4 border  border-black bg-white py-1 text-black outline-none `}
       {...props}
     />
   );
