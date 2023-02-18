@@ -9,9 +9,14 @@ datasource db {
 }
 
 model Opportunities {
-    id Int @id
-    Location String
-    Date DateTime
+    id          Int      @id
+    Location    String
+    Date        DateTime
     DateCreated DateTime
-    Atendee Int
+    Atendee     Int
+}
+
+model User {
+    id   Int    @id
+    name String
 }
